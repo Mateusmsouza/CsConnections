@@ -1,0 +1,23 @@
+
+556390116                       04-09-2017 18:19:00             04-09-2017 18:19:25             DeMaria                         RemoteControl                   {04DDFCF3-FB32-4865-B456-40AA87C54F1D}
+485502054                       04-09-2017 19:08:05             04-09-2017 19:08:23             DeMaria                         RemoteControl                   {ADD25421-7002-4C17-B301-7FA2ABAC83F8}
+965896760                       04-09-2017 19:09:06             04-09-2017 19:42:34             DeMaria                         RemoteControl                   {FFA691A0-4B47-4EA3-9424-B5EE21EBA289}
+758647000                       04-09-2017 19:00:32             04-09-2017 19:45:40             DeMaria                         RemoteControl                   {7C5C57AD-3DB1-4E00-BF83-99170563F7E8}
+945746428                       05-09-2017 12:17:16             05-09-2017 12:17:31             DeMaria                         RemoteControl                   {98FED5C4-09CE-4D68-B5E6-E2AAA223F117}
+615288413                       05-09-2017 12:17:34             05-09-2017 12:17:41             DeMaria                         RemoteControl                   {4BE6E3F8-31AB-4DE8-9720-19A18D90883E}
+579131103                       05-09-2017 12:36:34             05-09-2017 12:36:40             DeMaria                         RemoteControl                   {A74B14CE-6EB7-4A9E-A162-80D43E85459D}
+616743065                       05-09-2017 12:52:53             05-09-2017 12:52:57             DeMaria                         RemoteControl                   {92F8A0F3-1D56-40AD-9FEB-535D3B3DACCB}
+594859498                       05-09-2017 12:55:11             05-09-2017 12:55:17             DeMaria                         RemoteControl                   {C008C6E9-15A1-4ECA-BD83-94A2C4B6A1AE}
+103345185                       05-09-2017 13:05:43             05-09-2017 13:05:49             DeMaria                         RemoteControl                   {9B16AB11-0D2D-4F2D-87F1-1A6CF8EDB4F3}
+478383830                       05-09-2017 13:48:55             05-09-2017 13:49:04             DeMaria                         RemoteControl                   {2AFC33D4-37B4-410A-8293-E5DC5F6A898E}
+658397091                       05-09-2017 13:55:23             05-09-2017 13:59:21             DeMaria                         RemoteControl                   {61CA419B-1CC1-47BE-B6B5-A0DFE5DD3627}
+658397091                       05-09-2017 14:00:18             05-09-2017 14:14:06             DeMaria                         RemoteControl                   {0A9AADDF-DFAC-4FBA-B576-26A9981CFC4F}
+492002226                       05-09-2017 14:42:01             05-09-2017 14:42:08             DeMaria                         RemoteControl                   {930A0458-CDD0-4A76-8F9E-657BF53D7277}
+211901055                       05-09-2017 17:25:39             05-09-2017 17:25:48             DeMaria                         RemoteControl                   {AEFD54EE-DFC8-4A1D-B427-7FAA917A6A87}
+617266426                       05-09-2017 17:25:55             05-09-2017 17:26:12             DeMaria                         RemoteControl                   {A501EADA-6D67-4517-87F9-425784AAD069}
+556741271                       05-09-2017 17:51:38             05-09-2017 17:52:33             DeMaria                         RemoteControl                   {748063E4-D09D-4EC2-AEE5-E8668422AEC6}
+391091588                       06-09-2017 19:37:08             06-09-2017 19:37:44             DeMaria                         RemoteControl                   {EAF113B2-CAF0-4E73-BDB3-708802D878F3}
+720677380                       08-09-2017 12:16:30             08-09-2017 12:39:43             DeMaria                         RemoteControl                   {B582BD0C-83C6-4551-AD73-0B76A3F334AC}
+387338175                       08-09-2017 12:06:35             08-09-2017 12:39:45             DeMaria                         RemoteControl                   {A9235F59-773B-46FF-8780-788D57AC96F0}
+337328691                       08-09-2017 14:01:51             08-09-2017 14:20:11             DeMaria                         RemoteControl                   {E96872AD-0FC9-49FD-AFC7-0244B14412BE}
+640151475                       08-09-2017 14:02:16             08-09-2017 14:20:13             DeMaria                         RemoteControl                   {EEE85B2B-40B2-402C-A776-0E4BE085F1CD}
