@@ -39,18 +39,27 @@ namespace CsConnections
             int segundosIniciais = makeItSecond(Convert.ToInt32(h1), Convert.ToInt32(m1), Convert.ToInt32(s1));
             int segundosFinais = makeItSecond(Convert.ToInt32(h2), Convert.ToInt32(m2), Convert.ToInt32(s2));
             int segundos = segundosFinais - segundosIniciais;
-            return makeItSecond(segundos);
+            return makeItHour(segundos);
 
         }
 
         private static int makeItSecond(int h, int m, int s)
         {
-            return 1;
+            return ((h * 3600) + (m * 60) + s);
         }
 
         private static String makeItHour(int segundos)
         {
+            int horas = (segundos - (segundos % 3600)) / 3600;
+            segundos = (segundos % 3600);
+            int minutos = (segundos - (segundos % 60)) / 60;
+            segundos = segundos % 60;
 
+            //horas = (;
+            //minutos = ;
+            //segundos = ;
+
+            return (Convert.ToInt32(horas.ToString().Length) == Convert.ToInt32(1) ? "0" + horas.ToString() : horas.ToString() + ":" + Convert.ToInt32(minutos.ToString().Length) == Convert.ToInt32(1) ? "0" + minutos.ToString() : minutos.ToString() + ":" + Convert.ToInt32(segundos.ToString().Length) == 1 ? "0" + segundos.ToString() : segundos.ToString()).ToString;
         }
     }
 }
