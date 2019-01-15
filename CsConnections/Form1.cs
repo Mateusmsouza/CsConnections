@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using Time.LoadFile;
+using CsConnections;
 
 namespace CsConnections
 {
@@ -21,14 +22,14 @@ namespace CsConnections
         {
             List<String> timeList = new List<string>();
             FileLoaded filetoload = new FileLoaded();
-
+            FormatLine formatLine = new FormatLine();
             timeList = FileLoaded.Initial();
             
             if (timeList.Any())
             {
                 foreach(var time in timeList)
                 {
-                    lstTime.Items.Add(time);
+                    lstTime.Items.Add( FormatLine.FormatString(time.ToString()));
                 }
             }
             

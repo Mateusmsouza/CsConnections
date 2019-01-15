@@ -8,9 +8,9 @@ namespace Time.LoadFile {
     {
 	    public static List<String> Initial()
 	    {
-            string path = @"Connections.txt";
+            string path = @"C:\Users\jose c\source\repos\CsConnections\CsConnections\Connections.txt";
             List<string> toReturn = new List<string>();
-
+            
             if (File.Exists(path))
             {
                 try
@@ -21,8 +21,11 @@ namespace Time.LoadFile {
 
                         while ((currentLine = reader.ReadLine()) != null)
                         {
+                            
                             toReturn.Add(currentLine);
                         }
+                       
+                        
                     }
                 }
                 catch(Exception exception)
