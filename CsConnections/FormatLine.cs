@@ -22,7 +22,7 @@ namespace CsConnections
                 return ("Tempo de acesso: "+CalcString(line[2].ToString(), line[4].ToString())+" ID Acessada: "+line[0]+" Data "+line[1]+" Tipo de Conexão: "+line[6]);
             }catch(Exception exception)
             {
-                return exception.ToString();
+                return "Um problema na conversão de tempo ocorreu nesta linha.";
             }
         }
 
@@ -55,11 +55,11 @@ namespace CsConnections
             int minutos = (segundos - (segundos % 60)) / 60;
             segundos = segundos % 60;
 
-            //horas = (;
-            //minutos = ;
-            //segundos = ;
+            String strHoras = horas.ToString().Length == 1 ? "0" + horas.ToString() : horas.ToString();
+            String strMinutos = minutos.ToString().Length == 1 ? "0" + minutos.ToString(): minutos.ToString();
+            String strSegundos = segundos.ToString().Length == 1 ? "0" + segundos.ToString() : segundos.ToString();
 
-            return (Convert.ToInt32(horas.ToString().Length) == Convert.ToInt32(1) ? "0" + horas.ToString() : horas.ToString() + ":" + Convert.ToInt32(minutos.ToString().Length) == Convert.ToInt32(1) ? "0" + minutos.ToString() : minutos.ToString() + ":" + Convert.ToInt32(segundos.ToString().Length) == 1 ? "0" + segundos.ToString() : segundos.ToString()).ToString;
+            return (strHoras + ":" + strMinutos + ":" + strSegundos);
         }
     }
 }

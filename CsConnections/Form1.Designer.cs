@@ -45,18 +45,21 @@
             // lstTime
             // 
             this.lstTime.FormattingEnabled = true;
-            this.lstTime.Location = new System.Drawing.Point(127, 79);
+            this.lstTime.Location = new System.Drawing.Point(172, 60);
             this.lstTime.Name = "lstTime";
-            this.lstTime.Size = new System.Drawing.Size(610, 95);
+            this.lstTime.Size = new System.Drawing.Size(558, 95);
             this.lstTime.TabIndex = 1;
             // 
             // frmMain
             // 
+            this.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(847, 231);
             this.Controls.Add(this.lstTime);
             this.Controls.Add(this.lblTitle);
+            this.MaximizeBox = false;
             this.Name = "frmMain";
             this.Text = "CsConnections";
             this.Load += new System.EventHandler(this.frmMain_Load);
