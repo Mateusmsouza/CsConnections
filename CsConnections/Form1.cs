@@ -32,6 +32,10 @@ namespace CsConnections
                     lstTime.Items.Add( FormatLine.FormatString(time.ToString()));
                 }
             }
+            else
+            {
+                Environment.Exit(1);
+            }
             
         }
     }

@@ -8,7 +8,7 @@ namespace Time.LoadFile {
     {
 	    public static List<String> Initial()
 	    {
-            string path = @"C:\Users\jose c\source\repos\CsConnections\CsConnections\Connections.txt";
+            string path = @"C:/Users/Jeffersonn/source/repos/NewRepo/CsConnections/Connections.txt";
             List<string> toReturn = new List<string>();
             
             if (File.Exists(path))
@@ -32,6 +32,10 @@ namespace Time.LoadFile {
                 {
                     MessageBox.Show(exception.Message);
                 }
+            }
+            else
+            {
+                MessageBox.Show("Arquivo não localizado. Verifique o caminho configurado.");
             }
 
             return toReturn;
