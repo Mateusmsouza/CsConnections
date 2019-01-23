@@ -38,5 +38,44 @@ namespace CsConnections
             }
             
         }
+
+        private void btn_copy_Click(object sender, EventArgs e)
+        {
+            try{
+                if (lstTime.SelectedItem.ToString().Contains("Control"))
+                {
+                    Clipboard.SetText(lstTime.SelectedItem.ToString().Split(' ')[3]);
+                }
+            }catch(Exception except)
+            {
+                MessageBox.Show("SELECIONE UMA LINHA \n\n\nExceção gerada:\n"+except.ToString());
+            }
+           
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lstTime_SelectedValueChanged(object sender, EventArgs e)
+        {
+            
+            try
+            {
+                if (lstTime.SelectedItem.ToString().Contains("Control"))
+                {
+                    lblTime.Text = lstTime.SelectedItem.ToString().Split(' ')[3];
+                }
+                else
+                {
+                    lblTime.Text = "WHAT?";
+                }
+            }
+            catch (Exception except)
+            {
+                MessageBox.Show("Exceção gerada:\n" + except.ToString());
+            }
+        }
     }
 }

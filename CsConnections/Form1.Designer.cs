@@ -30,6 +30,9 @@
         {
             this.lblTitle = new System.Windows.Forms.Label();
             this.lstTime = new System.Windows.Forms.ListBox();
+            this.btn_copy = new System.Windows.Forms.Button();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.lblTime = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblTitle
@@ -49,6 +52,37 @@
             this.lstTime.Name = "lstTime";
             this.lstTime.Size = new System.Drawing.Size(558, 95);
             this.lstTime.TabIndex = 1;
+            this.lstTime.SelectedValueChanged += new System.EventHandler(this.lstTime_SelectedValueChanged);
+            // 
+            // btn_copy
+            // 
+            this.btn_copy.FlatAppearance.BorderSize = 5;
+            this.btn_copy.Location = new System.Drawing.Point(587, 162);
+            this.btn_copy.Name = "btn_copy";
+            this.btn_copy.Size = new System.Drawing.Size(142, 47);
+            this.btn_copy.TabIndex = 2;
+            this.btn_copy.Text = "Área de transferência";
+            this.btn_copy.UseVisualStyleBackColor = true;
+            this.btn_copy.Click += new System.EventHandler(this.btn_copy_Click);
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(172, 162);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(80, 17);
+            this.checkBox1.TabIndex = 3;
+            this.checkBox1.Text = "checkBox1";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // lblTime
+            // 
+            this.lblTime.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblTime.Location = new System.Drawing.Point(523, 163);
+            this.lblTime.Name = "lblTime";
+            this.lblTime.Size = new System.Drawing.Size(58, 23);
+            this.lblTime.TabIndex = 4;
+            this.lblTime.Click += new System.EventHandler(this.label1_Click);
             // 
             // frmMain
             // 
@@ -57,6 +91,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(847, 231);
+            this.Controls.Add(this.lblTime);
+            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.btn_copy);
             this.Controls.Add(this.lstTime);
             this.Controls.Add(this.lblTitle);
             this.MaximizeBox = false;
@@ -72,6 +109,9 @@
 
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.ListBox lstTime;
+        private System.Windows.Forms.Button btn_copy;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Label lblTime;
     }
 }
 

@@ -8,7 +8,9 @@ namespace Time.LoadFile {
     {
 	    public static List<String> Initial()
 	    {
-            string path = @"C:/Users/Jefferson/source/repos/NewRepo/CsConnections/Connections.txt";
+            //string path = @"C:/Users/Jefferson/source/repos/NewRepo/CsConnections/Connections.txt";
+
+            string path = @"C:\Users\jose c\source\repos\CsConnections\CsConnections\Connections.txt";
             List<string> toReturn = new List<string>();
             
             if (File.Exists(path))
