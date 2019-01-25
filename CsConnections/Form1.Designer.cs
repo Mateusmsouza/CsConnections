@@ -31,7 +31,7 @@
             this.lblTitle = new System.Windows.Forms.Label();
             this.lstTime = new System.Windows.Forms.ListBox();
             this.btn_copy = new System.Windows.Forms.Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.cbk_acumula = new System.Windows.Forms.CheckBox();
             this.lblTime = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -65,15 +65,16 @@
             this.btn_copy.UseVisualStyleBackColor = true;
             this.btn_copy.Click += new System.EventHandler(this.btn_copy_Click);
             // 
-            // checkBox1
+            // cbk_acumula
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(172, 162);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(80, 17);
-            this.checkBox1.TabIndex = 3;
-            this.checkBox1.Text = "checkBox1";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.cbk_acumula.AutoSize = true;
+            this.cbk_acumula.Location = new System.Drawing.Point(172, 162);
+            this.cbk_acumula.Name = "cbk_acumula";
+            this.cbk_acumula.Size = new System.Drawing.Size(80, 17);
+            this.cbk_acumula.TabIndex = 3;
+            this.cbk_acumula.Text = "checkBox1";
+            this.cbk_acumula.UseVisualStyleBackColor = true;
+            this.cbk_acumula.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // lblTime
             // 
@@ -92,7 +93,7 @@
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(847, 231);
             this.Controls.Add(this.lblTime);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.cbk_acumula);
             this.Controls.Add(this.btn_copy);
             this.Controls.Add(this.lstTime);
             this.Controls.Add(this.lblTitle);
@@ -110,7 +111,7 @@
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.ListBox lstTime;
         private System.Windows.Forms.Button btn_copy;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox cbk_acumula;
         private System.Windows.Forms.Label lblTime;
     }
 }

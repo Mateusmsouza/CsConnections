@@ -44,6 +44,10 @@ namespace CsConnections
             try{
                 if (lstTime.SelectedItem.ToString().Contains("Control"))
                 {
+                    if (cbk_acumula.Checked)
+                    {
+                        FormatLineAll.entry(lstTime.SelectedItems.Array);
+                    }
                     Clipboard.SetText(lstTime.SelectedItem.ToString().Split(' ')[3]);
                 }
             }catch(Exception except)
@@ -75,6 +79,18 @@ namespace CsConnections
             catch (Exception except)
             {
                 MessageBox.Show("Exceção gerada:\n" + except.ToString());
+            }
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (lstTime.SelectionMode.ToString() == "One")
+            {
+                lstTime.SelectionMode = SelectionMode.MultiSimple;
+            }
+            else
+            {
+                lstTime.SelectionMode = SelectionMode.One;
             }
         }
     }
