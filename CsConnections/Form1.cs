@@ -42,13 +42,9 @@ namespace CsConnections
         private void btn_copy_Click(object sender, EventArgs e)
         {
             try{
-                if (lstTime.SelectedItem.ToString().Contains("Control"))
+                if (lstTime.SelectedItem.ToString().Contains("Acessada:"))
                 {
-                    if (cbk_acumula.Checked)
-                    {
-                        FormatLineAll.entry(lstTime.SelectedItems.Array);
-                    }
-                    Clipboard.SetText(lstTime.SelectedItem.ToString().Split(' ')[3]);
+                    Clipboard.SetText(lblTime.Text);
                 }
             }catch(Exception except)
             {
@@ -67,9 +63,20 @@ namespace CsConnections
             
             try
             {
-                if (lstTime.SelectedItem.ToString().Contains("Control"))
+                if (lstTime.SelectedItem.ToString().Contains("Acessada:"))
                 {
-                    lblTime.Text = lstTime.SelectedItem.ToString().Split(' ')[3];
+                    if (cbk_acumula.Checked)
+                    {
+                        string[] index = new string[lstTime.SelectedItems.Count];
+                        lstTime.SelectedItems.CopyTo(index, 0);
+                                             
+                        lblTime.Text = FormatLineAll.entry(index);
+                    }
+                    else
+                    {
+                        lblTime.Text = lstTime.SelectedItem.ToString().Split(' ')[3];
+                    }
+
                 }
                 else
                 {
@@ -91,7 +98,18 @@ namespace CsConnections
             else
             {
                 lstTime.SelectionMode = SelectionMode.One;
+                lblTime.Text = lstTime.SelectedItem.ToString().Split(' ')[3];
             }
+        }
+
+        private void toolStripStatusLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void limparConnectionstxtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

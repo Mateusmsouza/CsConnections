@@ -7,10 +7,22 @@ namespace CsConnections
 {
     class FormatLineAll
     {
-        public static String entry(List<String> time)
+        public static String entry(String[] time)
         {
-            time.Any();
-            return "oi";
+            int seconds = 0;
+
+            if (time.Any())
+            {
+                foreach(string text in time)
+                {
+                    
+                    String[] tempLine = text.Split(' ');
+                    seconds = seconds + FormatLine.makeItSecond(Convert.ToInt32(tempLine[3].Split(':')[0]), Convert.ToInt32(tempLine[3].Split(':')[1]), Convert.ToInt32(tempLine[3].Split(':')[2]));
+
+                }
+  
+            }
+            return FormatLine.makeItHour(seconds);
         }
     }
 }

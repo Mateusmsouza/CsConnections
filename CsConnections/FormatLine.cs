@@ -12,6 +12,8 @@ namespace CsConnections
             string[] index = line.Split(' ');
             
             index = index.Where((value, indx) => index[indx].Length > 1).ToArray();
+
+
             return ConvertString(index);
         }
 
@@ -19,14 +21,14 @@ namespace CsConnections
         {
             try
             {
-                return ("Tempo de acesso: "+CalcString(line[2].ToString(), line[4].ToString())+" ID Acessada: "+line[0]+" Data "+line[1]+" Tipo de Conexão: "+line[6]);
+                return ("Tempo de acesso: "+CalcString(line[2].ToString(), line[4].ToString())+" ID Acessada: "+line[0]+" Data "+line[1]);
             }catch(Exception exception)
             {
-                return "Um problema na conversão de tempo ocorreu nesta linha.";
+                return "Um problema na conversão de tempo ocorreu nesta linha";
             }
         }
 
-        private static String CalcString(String time1, String time2)
+        public static String CalcString(String time1, String time2)
         {
             String h1 = time1.Split(':')[0];
             String m1 = time1.Split(':')[1];
@@ -38,17 +40,19 @@ namespace CsConnections
 
             int segundosIniciais = makeItSecond(Convert.ToInt32(h1), Convert.ToInt32(m1), Convert.ToInt32(s1));
             int segundosFinais = makeItSecond(Convert.ToInt32(h2), Convert.ToInt32(m2), Convert.ToInt32(s2));
+
+
             int segundos = segundosFinais - segundosIniciais;
             return makeItHour(segundos);
 
         }
 
-        private static int makeItSecond(int h, int m, int s)
+        public static int makeItSecond(int h, int m, int s)
         {
             return ((h * 3600) + (m * 60) + s);
         }
 
-        private static String makeItHour(int segundos)
+        public static String makeItHour(int segundos)
         {
             int horas = (segundos - (segundos % 3600)) / 3600;
             segundos = (segundos % 3600);
