@@ -136,12 +136,14 @@
             this.exibirEditarToolStripMenuItem.Name = "exibirEditarToolStripMenuItem";
             this.exibirEditarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.exibirEditarToolStripMenuItem.Text = "Exibir / Editar";
+            this.exibirEditarToolStripMenuItem.Click += new System.EventHandler(this.exibirEditarToolStripMenuItem_Click);
             // 
             // sairToolStripMenuItem
             // 
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
             this.sairToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
             this.sairToolStripMenuItem.Text = "Sair";
+            this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
             // sobreToolStripMenuItem
             // 

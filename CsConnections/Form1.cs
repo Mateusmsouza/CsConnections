@@ -74,7 +74,7 @@ namespace CsConnections
                     }
                     else
                     {
-                        lblTime.Text = lstTime.SelectedItem.ToString().Split(' ')[3];
+                       lblTime.Text = lstTime.SelectedItem.ToString().Split(' ')[3];
                     }
 
                 }
@@ -85,7 +85,7 @@ namespace CsConnections
             }
             catch (Exception except)
             {
-                MessageBox.Show("Exceção gerada:\n" + except.ToString());
+                //MessageBox.Show("Exceção gerada:\n" + except.ToString());
             }
         }
 
@@ -108,6 +108,16 @@ namespace CsConnections
         }
 
         private void limparConnectionstxtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
+        }
+
+        private void exibirEditarToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }
