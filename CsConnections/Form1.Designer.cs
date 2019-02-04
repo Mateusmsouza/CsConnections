@@ -36,8 +36,6 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.arquivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.limparConnectionstxtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pathConnectionstxtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exibirEditarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
@@ -110,7 +108,6 @@
             // 
             this.arquivoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.limparConnectionstxtToolStripMenuItem,
-            this.pathConnectionstxtToolStripMenuItem,
             this.sairToolStripMenuItem});
             this.arquivoToolStripMenuItem.Name = "arquivoToolStripMenuItem";
             this.arquivoToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
@@ -122,21 +119,6 @@
             this.limparConnectionstxtToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
             this.limparConnectionstxtToolStripMenuItem.Text = "Limpar Connections.txt";
             this.limparConnectionstxtToolStripMenuItem.Click += new System.EventHandler(this.limparConnectionstxtToolStripMenuItem_Click);
-            // 
-            // pathConnectionstxtToolStripMenuItem
-            // 
-            this.pathConnectionstxtToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.exibirEditarToolStripMenuItem});
-            this.pathConnectionstxtToolStripMenuItem.Name = "pathConnectionstxtToolStripMenuItem";
-            this.pathConnectionstxtToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
-            this.pathConnectionstxtToolStripMenuItem.Text = "Path Connections.txt";
-            // 
-            // exibirEditarToolStripMenuItem
-            // 
-            this.exibirEditarToolStripMenuItem.Name = "exibirEditarToolStripMenuItem";
-            this.exibirEditarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.exibirEditarToolStripMenuItem.Text = "Exibir / Editar";
-            this.exibirEditarToolStripMenuItem.Click += new System.EventHandler(this.exibirEditarToolStripMenuItem_Click);
             // 
             // sairToolStripMenuItem
             // 
@@ -150,6 +132,7 @@
             this.sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
             this.sobreToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
             this.sobreToolStripMenuItem.Text = "Sobre";
+            this.sobreToolStripMenuItem.Click += new System.EventHandler(this.sobreToolStripMenuItem_Click);
             // 
             // frmMain
             // 
@@ -187,8 +170,6 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem arquivoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem limparConnectionstxtToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem pathConnectionstxtToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem exibirEditarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sobreToolStripMenuItem;
     }

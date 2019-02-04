@@ -14,6 +14,17 @@ namespace CsConnections
         public Path()
         {
             InitializeComponent();
+            
+        }
+
+        private void btnEditPath_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/Mateusmsouza/CsConnections");
         }
     }
 }

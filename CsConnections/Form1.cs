@@ -109,7 +109,7 @@ namespace CsConnections
 
         private void limparConnectionstxtToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Time.LoadFile.FileLoaded.Initial(true);
         }
 
         private void sairToolStripMenuItem_Click(object sender, EventArgs e)
@@ -117,9 +117,16 @@ namespace CsConnections
             Environment.Exit(0);
         }
 
+        
         private void exibirEditarToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            
+        }
 
+        private void sobreToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Path Credits = new Path();
+            Credits.ShowDialog();
         }
     }
 }
