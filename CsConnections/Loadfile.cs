@@ -16,8 +16,9 @@ namespace Time.LoadFile {
             FileLoaded load = new FileLoaded();
             load.path = @"C:\Users\jose c\source\repos\CsConnections\CsConnections\Connections.txt";
 #else
-                string username = Environment.UserName;
-                string path = @"C:\Users\replace\source\repos\CsConnections\CsConnections\Connections.txt".Replace("replace",username);
+            FileLoaded load = new FileLoaded();
+            string username = Environment.UserName;
+            load.path = @"C:\Users\replace\AppData\Roaming\TeamViewer\Connections.txt".Replace("replace",username);
 #endif
             //string path = @"C:\Users\jose c\source\repos\CsConnections\CsConnections\Connections.txt";
 
@@ -49,12 +50,13 @@ namespace Time.LoadFile {
                 }
                 catch(Exception exception)
                 {
+
                     MessageBox.Show(exception.Message);
                 }
             }
             else
             {
-                MessageBox.Show("Arquivo não localizado. Verifique o caminho configurado.");
+                MessageBox.Show("Arquivo não localizado. Verifique o caminho configurado.\nColoque um arquivo path.txt na pasta de instalação com o caminho.");
             }
 
             return toReturn;

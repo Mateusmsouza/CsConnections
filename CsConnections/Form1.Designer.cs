@@ -148,6 +148,7 @@
             this.Controls.Add(this.btn_copy);
             this.Controls.Add(this.lstTime);
             this.Controls.Add(this.lblTitle);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.Name = "frmMain";
